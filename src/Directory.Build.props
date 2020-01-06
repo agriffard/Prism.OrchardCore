@@ -1,0 +1,15 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <PackageId>Prism.OrchardCore</PackageId>
+    <Title>Prism module for Orchard Core</Title>
+    <Description>The Prism module allows you to display Html content with syntax highlighting.</Description>
+    <PackageTags>Prism;OrchardCore</PackageTags>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>rc1</VersionSuffix>
+  </PropertyGroup>
+
+  <!-- Called after so that the <VersionSuffix> is built after the local ones -->
+  <Import Project="Common.props"/>
+
+</Project>
