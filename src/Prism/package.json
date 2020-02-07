@@ -2,7 +2,7 @@
   "name": "prism.orchardcore",
   "version": "1.0.0",
   "dependencies": {
-    "prismjs": "1.18.0"
+    "prismjs": "1.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

@@ -184,5 +184,3 @@ nuget.exe
 
 #exclude node modules
 src/*/node_modules/*
-
-wwwroot

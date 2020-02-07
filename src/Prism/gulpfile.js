@@ -97,7 +97,7 @@ gulp.task('help', function() {
 */
 
 function getAssetGroups() {
-    var assetManifestPaths = glob.sync("./src/{Modules,Themes}/*/Assets.json", {});
+    var assetManifestPaths = glob.sync("./Assets.json", {});
     var assetGroups = [];
     assetManifestPaths.forEach(function (assetManifestPath) {
         var assetManifest = require("./" + assetManifestPath);
