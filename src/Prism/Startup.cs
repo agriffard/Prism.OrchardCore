@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using OrchardCore.ContentTypes.Editors;
 using OrchardCore.Modules;
 using OrchardCore.ResourceManagement;
@@ -10,7 +11,7 @@ namespace Prism.OrchardCore
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IResourceManifestProvider, ResourceManifest>();
+            services.AddTransient<IConfigureOptions<ResourceManagementOptions>, ResourceManagementOptionsConfiguration>();
             services.AddScoped<IContentPartFieldDefinitionDisplayDriver, HtmlFieldPrismDisplaySettingsDriver>();
         }
     }
