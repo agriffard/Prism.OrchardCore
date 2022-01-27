@@ -13,6 +13,7 @@ namespace Prism.OrchardCore
         {
             services.AddTransient<IConfigureOptions<ResourceManagementOptions>, ResourceManagementOptionsConfiguration>();
             services.AddScoped<IContentPartFieldDefinitionDisplayDriver, HtmlFieldPrismDisplaySettingsDriver>();
+            services.AddScoped<IContentTypePartDefinitionDisplayDriver, HtmlBodyPartPrismDisplaySettingsDriver>();
         }
     }
 }

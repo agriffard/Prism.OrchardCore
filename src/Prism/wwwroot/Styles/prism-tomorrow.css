@@ -1,5 +1,3 @@
-/* PrismJS 1.23.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+csharp+git+json+less+liquid+powershell+sass+scss+sql+yaml */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -122,4 +120,3 @@ pre[class*="language-"] {
 .token.inserted {
 	color: green;
 }
-

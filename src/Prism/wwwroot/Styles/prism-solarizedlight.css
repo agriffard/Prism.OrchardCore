@@ -1,5 +1,3 @@
-/* PrismJS 1.23.0
-https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+bash+csharp+git+json+less+liquid+powershell+sass+scss+sql+yaml */
 /*
  Solarized Color Schemes originally by Ethan Schoonover
  http://ethanschoonover.com/solarized
@@ -150,4 +148,3 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-

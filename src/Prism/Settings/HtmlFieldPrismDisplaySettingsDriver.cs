@@ -7,7 +7,6 @@ using Prism.OrchardCore.ViewModels;
 
 namespace Prism.OrchardCore.Settings
 {
-
     public class HtmlFieldPrismDisplaySettingsDriver : ContentPartFieldDefinitionDisplayDriver<HtmlField>
     {
         public override IDisplayResult Edit(ContentPartFieldDefinition partFieldDefinition)

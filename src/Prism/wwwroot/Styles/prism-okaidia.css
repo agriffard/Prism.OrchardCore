@@ -1,5 +1,3 @@
-/* PrismJS 1.23.0
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+csharp+git+json+less+liquid+powershell+sass+scss+sql+yaml */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -123,4 +121,3 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-

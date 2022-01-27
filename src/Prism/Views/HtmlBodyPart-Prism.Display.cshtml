@@ -1,0 +1,15 @@
+@model OrchardCore.Html.ViewModels.HtmlBodyPartViewModel
+@using OrchardCore.Mvc.Utilities
+@using Prism.OrchardCore.Settings
+@using OrchardCore.ContentManagement.Metadata.Models
+
+@{
+    HtmlBodyPartPrismDisplaySettings settings = new HtmlBodyPartPrismDisplaySettings();
+    if (Model.TypePartDefinition != null)
+    {
+        settings = Model.TypePartDefinition.GetSettings<HtmlBodyPartPrismDisplaySettings>();
+    }
+}
+<script asp-name="prism" version="1" at="Foot"></script>
+<style asp-src="~/Prism.OrchardCore/Styles/@(settings.Theme ?? "prism").css" version="1"></style>
+@Html.Raw(@Model.Html)
