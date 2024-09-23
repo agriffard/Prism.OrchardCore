@@ -1,7 +1,9 @@
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using OrchardCore.ContentFields.Fields;
 using OrchardCore.ContentManagement.Metadata.Models;
 using OrchardCore.ContentTypes.Editors;
+using OrchardCore.DisplayManagement.Handlers;
 using OrchardCore.DisplayManagement.Views;
 using Prism.OrchardCore.ViewModels;
 
@@ -9,11 +11,11 @@ namespace Prism.OrchardCore.Settings
 {
     public class HtmlFieldPrismDisplaySettingsDriver : ContentPartFieldDefinitionDisplayDriver<HtmlField>
     {
-        public override IDisplayResult Edit(ContentPartFieldDefinition partFieldDefinition)
+        public override IDisplayResult Edit(ContentPartFieldDefinition partFieldDefinition, BuildEditorContext context)
         {
             return Initialize<PrismSettingsViewModel>("HtmlFieldPrismDisplaySettings_Edit", model =>
             {
-                var settings = partFieldDefinition.GetSettings<HtmlFieldPrismDisplaySettings>();
+                var settings = partFieldDefinition.Settings.ToObject<HtmlFieldPrismDisplaySettings>();
 
                 model.Theme = settings.Theme;
             })
@@ -34,7 +36,7 @@ namespace Prism.OrchardCore.Settings
                 context.Builder.WithSettings(settings);
             }
 
-            return Edit(partFieldDefinition);
+            return Edit(partFieldDefinition, context);
         }
     }
 }

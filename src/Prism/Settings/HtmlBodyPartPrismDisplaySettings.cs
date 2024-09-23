@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace Prism.OrchardCore.Settings
 {
     public class HtmlBodyPartPrismDisplaySettings
